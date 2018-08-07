@@ -26,7 +26,10 @@ class CreateTableProducts extends Migration
             $table->string('prepration_time');
             $table->integer('status');
             $table->integer('max_num');
+            $table->integer('is_product')->default(0);
+            $table->integer('is_express')->default(0);
             $table->text('requirement');
+            $table->string('express_delivery_time');
             $table->enum('gender',array(0,1,2,3));
             $table->softDeletes();
             $table->timestamps();
