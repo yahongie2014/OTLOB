@@ -15,7 +15,7 @@ class CreateTableProductExeptionDate extends Migration
     {
         Schema::create('product_exeption_date', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('date');
+            $table->date('date')->index();
             $table->integer('product_id')->index();
             $table->softDeletes();
             $table->timestamps();

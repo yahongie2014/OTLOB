@@ -18,6 +18,7 @@ class CreateTableProductAvailibility extends Migration
             $table->integer('product_id')->index();
             $table->integer('day_no');
             $table->integer('gender');
+            $table->integer('quantity');
             $table->integer('period');
             $table->softDeletes();
             $table->timestamps();
