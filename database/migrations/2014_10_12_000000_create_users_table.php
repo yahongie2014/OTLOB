@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->integer('area_id')->default(0);
             $table->integer('is_vendor')->default(0);
             $table->integer('is_admin')->default(0);
+            $table->integer('nation_id')->default(0);
             $table->integer('is_privillage')->default(0);
             $table->string('token');
             $table->string('country');
