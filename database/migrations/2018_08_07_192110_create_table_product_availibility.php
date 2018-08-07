@@ -15,7 +15,7 @@ class CreateTableProductAvailibility extends Migration
     {
         Schema::create('product_availibility', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('product_id')->index();
+            $table->integer('product_id')->index()->unsigned();
             $table->integer('day_no');
             $table->integer('gender');
             $table->integer('quantity');

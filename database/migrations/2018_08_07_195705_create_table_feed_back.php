@@ -15,9 +15,9 @@ class CreateTableFeedBack extends Migration
     {
         Schema::create('feed_back', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->index();
-            $table->integer('prod_id')->index();
-            $table->integer('order_id');
+            $table->integer('user_id')->index()->unsigned();
+            $table->integer('prod_id')->index()->unsigned();
+            $table->integer('order_id')->index()->unsigned();
             $table->text('notes_product');
             $table->double('rate',5,2);
             $table->softDeletes();

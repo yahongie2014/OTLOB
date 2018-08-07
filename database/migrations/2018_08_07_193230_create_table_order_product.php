@@ -15,18 +15,18 @@ class CreateTableOrderProduct extends Migration
     {
         Schema::create('order_product', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->integer('user_id')->unsigned();
             $table->enum('status',array(1,2,3,4,5,6,7));
-            $table->integer('area_id');
+            $table->integer('area_id')->unsigned();
             $table->string('address');
             $table->string('order_id');
             $table->double('total');
-            $table->integer('promo_code_id');
+            $table->integer('promo_code_id')->unsigned();
             $table->double('total_after_discount');
             $table->integer('payment_type');
             $table->string('payment_no');
             $table->string('payment_image');
-            $table->integer('bank_id');
+            $table->integer('bank_id')->unsigned();
             $table->string('currency_rate');
             $table->softDeletes();
             $table->timestamps();

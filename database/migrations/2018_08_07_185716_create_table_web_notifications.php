@@ -15,7 +15,7 @@ class CreateTableWebNotifications extends Migration
     {
         Schema::create('web_notifications', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->text('body');
             $table->text('action_link');

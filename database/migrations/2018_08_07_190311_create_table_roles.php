@@ -15,11 +15,11 @@ class CreateTableRoles extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->integer('user_id')->unsigned();
             $table->integer('is_sales')->default(0);
             $table->integer('is_account')->default(0);
             $table->integer('is_cook')->default(0);
-            $table->integer('vendor_id');
+            $table->integer('vendor_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

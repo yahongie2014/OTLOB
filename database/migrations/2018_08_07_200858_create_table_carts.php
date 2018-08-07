@@ -15,10 +15,10 @@ class CreateTableCarts extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->index();
+            $table->integer('user_id')->index()->unsigned();
             $table->string('device_id');
             $table->string('device_type');
-            $table->integer('product_id')->index();
+            $table->integer('product_id')->index()->unsigned();
             $table->enum('gender',array('male','female','nogender'));
             $table->integer('amount');
             $table->string('address');

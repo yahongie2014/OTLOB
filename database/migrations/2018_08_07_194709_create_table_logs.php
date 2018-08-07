@@ -18,7 +18,7 @@ class CreateTableLogs extends Migration
             $table->string('description');
             $table->integer('item_id');
             $table->string('type');
-            $table->integer('user_id')->default(0);
+            $table->integer('user_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

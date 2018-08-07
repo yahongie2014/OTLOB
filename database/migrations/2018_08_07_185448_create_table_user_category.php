@@ -15,8 +15,8 @@ class CreateTableUserCategory extends Migration
     {
         Schema::create('user_category', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('cat_id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('cat_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

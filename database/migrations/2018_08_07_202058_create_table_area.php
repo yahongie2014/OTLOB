@@ -18,7 +18,7 @@ class CreateTableArea extends Migration
             $table->string('name')->index();
             $table->enum('lang',array('ar','en'));
             $table->string('ico');
-            $table->integer('currency_id')->index();
+            $table->integer('currency_id')->index()->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

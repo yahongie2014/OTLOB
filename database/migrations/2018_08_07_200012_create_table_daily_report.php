@@ -16,7 +16,7 @@ class CreateTableDailyReport extends Migration
         Schema::create('daily_report', function (Blueprint $table) {
             $table->increments('id');
             $table->date('date');
-            $table->integer('all_users')->index();
+            $table->integer('all_users')->index()->unsigned();
             $table->integer('providers')->index();
             $table->integer('all_products')->index();
             $table->integer('waiting_products');

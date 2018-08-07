@@ -15,7 +15,7 @@ class CreateTablePayment extends Migration
     {
         Schema::create('payment', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->integer('user_id')->unsigned();
             $table->string('card_number');
             $table->string('sadad_olp');
             $table->string('payment_option');

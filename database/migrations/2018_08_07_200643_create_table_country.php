@@ -17,7 +17,7 @@ class CreateTableCountry extends Migration
             $table->increments('id');
             $table->string('country');
             $table->enum('lang',array('ar','en'));
-            $table->integer('area_id')->default(0);
+            $table->integer('area_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -15,10 +15,10 @@ class CreateTableBookmark extends Migration
     {
         Schema::create('bookmark', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->index();
+            $table->integer('user_id')->index()->unsigned();
             $table->string('device_id');
             $table->string('device_type');
-            $table->integer('product_id')->index();
+            $table->integer('product_id')->index()->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });
