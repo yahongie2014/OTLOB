@@ -1,0 +1,1522 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Awaiken
+* Template Name : App Launch - App Landing page HTML5 Template
+* File          : App Launch main CSS file
+* Version       : 3.0
+* ---------------------------------------------------------------------------------------- */
+/* INDEX
+----------------------------------------------------------------------------------------
+01. General css
+02. Navigation area css
+03. Slider area css
+04. Services area css
+05. Intro Video area css
+06. Overview area css
+07. How it work area css
+08. Awesome Features area css
+09. Pricing area css
+10. Screenshot  area css
+11. Testimonial area css
+12. FAQs area css
+13. Follow Social Links area css
+14. Download Apps area css
+15. Contact us area css
+16. Footer area css
+17. Media Screens
+-------------------------------------------------------------------------------------- */
+
+/************************************/
+/***** 	   01. General css		 ****/
+/************************************/
+
+body{
+	font-size: 16px;
+	font-family: 'Conv_JF_FLAT_REGULAR', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin-top:0;
+	font-weight: 700;
+}
+
+img{
+	max-width: 100%;
+}
+
+a:hover{
+	text-decoration: none;
+	outline: 0;
+}
+
+a:focus{
+	text-decoration: none;
+	outline: 0;
+}
+
+::-moz-selection{
+	background: #1151d3;
+	color: #fff;
+}
+
+::selection{
+	background: #1151d3;
+	color: #fff;
+}
+
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #1151d3;
+	z-index: 9999;
+}
+
+.sk-wave{
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	font-size: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -25px;
+}
+
+.sk-wave .sk-rect{
+	background-color: #fff;
+	height: 100%;
+	width: 6px;
+	display: inline-block;
+	-webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+	-moz-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+	animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+}
+
+.sk-wave .sk-rect1{
+	-webkit-animation-delay: -1.2s;
+	-moz-animation-delay: -1.2s;
+	animation-delay: -1.2s;
+}
+
+.sk-wave .sk-rect2{
+	-webkit-animation-delay: -1.1s;
+	-moz-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+}
+
+.sk-wave .sk-rect3{
+	-webkit-animation-delay: -1s;
+	-moz-animation-delay: -1s;
+	animation-delay: -1s;
+}
+
+.sk-wave .sk-rect4{
+	-webkit-animation-delay: -0.9s;
+	-moz-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+
+.sk-wave .sk-rect5{
+	-webkit-animation-delay: -0.8s;
+	-moz-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+}
+
+.btn-custom{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 14px 30px;
+	min-width: 170px;
+	text-align: center;
+	color: #fff;
+	box-shadow: 1px 2px 46px 0px rgba(0,0,0,0.1);
+	background: #16c9f6;
+	background: linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -webkit-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -moz-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -o-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.btn-custom:hover{
+	background: #16c9f6;
+	color: #fff;
+}
+
+.row.no-gutters{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/************************************/
+/***** 02. Navigation area css  *****/
+/************************************/
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-brand{
+	padding: 16px 15px 0;
+	height: auto;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+}
+
+.navbar-brand img{
+	transition: all 0.3s;
+	height: 60px;
+}
+
+.navbar-default{
+	background: none;
+	border-radius: 0;
+	border-bottom: none;
+	z-index: 101;
+	padding: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+}
+
+.navbar-nav li{
+	padding: 30px 0;
+	margin:0 2px;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+}
+
+.nav li{
+    position: relative;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #1a1a1a;
+	letter-spacing: 0.05em;
+	padding: 6px 8px; 
+	position: relative;
+	border: 1px solid transparent;
+}
+
+.nav ul{
+	display: none;
+	padding: 0;
+	min-width: 214px;
+	list-style: none;
+    position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 0px;
+	background: #16c9f6;
+	background: linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -webkit-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -moz-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -o-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.nav ul li{
+	transition: all 0.4s;
+	margin: 0;
+}
+
+.nav ul li:hover{
+	background: rgba(255,255,255,0.14);
+}
+
+.nav ul li a:hover{
+	color: #000;
+}
+
+.nav ul li a{
+	border: none !important;
+}
+
+.nav .active a{
+	background: none !important;
+	color: #000 !important;
+	transition: all 0.3s;
+}
+
+.nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 12px 20px;
+}
+
+.nav .active ul li a{
+	border: none !important;
+}
+
+.nav ul ul{
+	left: 100%;
+	top: 0;
+	margin-top: -1px;
+}
+
+.nav ul li{
+	padding: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.nav ul li:last-child{
+	border-bottom: none;
+}
+
+.sticky-header{
+	background: #1151d3;
+	transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticky-header .navbar-brand{
+	padding-top: 12px;
+}
+
+.sticky-header .navbar-brand img{
+	height: 48px;
+}
+
+.sticky-header .navbar-nav>li{
+	padding: 18px 0;
+}
+
+.sticky-header .navbar-brand h1{
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #000;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+	color: #fff;
+}
+
+.sticky-header .navbar-nav>li>a{
+	color: #fff;
+}
+
+/************************************/
+/*****   03. Slider area css    *****/
+/************************************/
+
+.banner{
+	position: relative;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	background: url(../images/header-bg.png) no-repeat top center;
+	padding: 140px 0 100px;
+}
+
+.banner .row{
+	position: relative;
+	z-index: 1;
+}
+
+.banner-image{
+	text-align: center;
+}
+
+.header-content{
+	padding-top: 50px;
+}
+
+.header-content h4{
+	font-size: 14px;
+	color: #1a1a1a;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin-bottom: 4px;
+}
+
+.header-content h2{
+	font-size: 40px;
+	color: #1a1a1a;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+}
+
+.header-content p{
+	color: #1a1a1a;
+	line-height: 1.8em;
+	font-size: 12px;
+	letter-spacing: 0.04em;
+	margin-bottom: 1.5em;
+}
+
+.btn-download{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	padding: 12px 20px 12px 54px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+	border-radius: 6px;
+	transition: all 0.1s linear;
+}
+
+.btn-download span{
+	font-size: 10px;
+	display: block;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+
+.btn-download i{
+	font-size: 32px;
+	position: absolute;
+	top: 14px;
+	left: 16px;
+}
+
+.btn-download:focus,
+.btn-download:hover{
+	color: #fff;
+}
+
+.header-content .download-button{
+	margin-top: 40px;
+}
+
+.btn-apple{
+	background: linear-gradient(#569eff,#22e8f3);
+}
+
+.btn-android{
+	background: #f39301;
+	background: linear-gradient(#f39301,#fed30a);
+	background: -webkit-linear-gradient(#f39301,#fed30a);
+	background: -moz-linear-gradient(#f39301,#fed30a);
+	background: -o-linear-gradient(#f39301,#fed30a);
+}
+
+/**************************************/
+/*****   04. Services area css    *****/
+/**************************************/
+
+.services{
+	padding: 60px 0;
+}
+
+.service-single{
+	padding: 20px;
+	border-radius: 6px;
+	background: #05d2e3;
+	background: linear-gradient(to top, #05d2e3,#02da8f);
+	background: -webkit-linear-gradient(to top, #05d2e3,#02da8f);
+	background: -moz-linear-gradient(to top, #05d2e3,#02da8f);
+	background: -o-linear-gradient(to top, #05d2e3,#02da8f);
+}
+
+.service-skyblue{
+	background: #05d2e3;
+	background: linear-gradient(to top, #05d2e3,#02da8f);
+	background: -webkit-linear-gradient(to top, #05d2e3,#02da8f);
+	background: -moz-linear-gradient(to top, #05d2e3,#02da8f);
+	background: -o-linear-gradient(to top, #05d2e3,#02da8f);
+}
+
+.service-pink{
+	background: #ee3e86;
+	background: linear-gradient(to top, #ee3e86,#fa5b77);
+	background: -webkit-linear-gradient(to top, #ee3e86,#fa5b77);
+	background: -moz-linear-gradient(to top, #ee3e86,#fa5b77);
+	background: -o-linear-gradient(to top, #ee3e86,#fa5b77);
+}
+
+.service-blue{
+	background: #569eff;
+	background: linear-gradient(to top, #569eff,#22e8f3);
+	background: -webkit-linear-gradient(to top, #569eff,#22e8f3);
+	background: -moz-linear-gradient(to top, #569eff,#22e8f3);
+	background: -o-linear-gradient(to top, #569eff,#22e8f3);
+}
+
+.service-header{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.service-header .icon-box{
+	font-size: 50px;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 1em;
+}
+
+.service-header h3{
+	color: #fff;
+	padding-right: 60px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+.service-body p{
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+/*****************************************/
+/*****   05. Intro Video area css    *****/
+/*****************************************/
+
+.section-title{
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+.section-title h2{
+	font-size: 30px;
+	color: #1a1a1a;
+	position: relative;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.section-title h2:before{
+	content: '';
+	display: block;
+	width: 34px;
+	height: 2px;
+	background: #1151d3;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -17px;
+}
+
+.section-title p{
+	color: #a5a3a3;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.intro-video{
+	padding: 60px 0 100px;
+}
+
+.intro-video .section-title{
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.intro-video .section-title h2:before{
+	left: 0;
+	margin-left: 0;
+}
+
+.video-image{
+	position: relative;
+	padding-left: 50px;
+	display: inline-block;
+}
+
+.video-image .btn-play{
+	display: block;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	line-height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -50px;
+	background: #f39301;
+	background: linear-gradient(#f39301,#fed30a);
+	background: -webkit-linear-gradient(#f39301,#fed30a);
+	background: -moz-linear-gradient(#f39301,#fed30a);
+	background: -o-linear-gradient(#f39301,#fed30a);	
+}
+
+.video-entry{
+	padding-top: 50px;
+}
+
+.video-entry p{
+	color: #8a8a8d;
+	font-size: 14px;
+	line-height: 1.8em;
+	margin-bottom: 1.8em;
+}
+
+/**************************************/
+/*****   06. Overview area css    *****/
+/**************************************/
+
+.overview{
+	padding: 80px 0;
+	background: #f9f9f9;
+}
+
+.overview .section-title{
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.overview .section-title h2:before{
+	left: 0;
+	margin-left: 0;
+}
+
+.overview-image{
+	text-align: center;
+}
+
+.overview-entry{
+	padding-top: 20px;
+}
+
+.overview-entry p{
+	color: #8a8a8d;
+	font-size: 14px;
+	line-height: 1.8em;
+	margin-bottom: 1.8em;
+}
+
+/*****************************************/
+/*****   07. How it work area css    *****/
+/*****************************************/
+
+.how-it-works{
+	padding: 100px 0;
+}
+
+.how-it-work-single{
+	text-align: center;
+	padding: 15px 10px;
+}
+
+.how-it-work-single .icon-box{
+	font-size: 100px;
+}
+
+.how-it-work-single h3{
+	font-size: 18px;
+	font-weight: 600;
+	color: #1a1a1a;
+	margin: 10px 0 22px;
+}
+
+.how-it-work-single p{
+	font-size: 14px;
+	color: #c0c0c0;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.how-it-work-single a{
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	padding: 6px 16px;
+	border-radius: 20px;
+}
+
+.howitwork-skyblue .icon-box,
+.howitwork-skyblue a{
+	background: #569eff;
+    background: linear-gradient(to top, #569eff,#22e8f3);
+    background: -webkit-linear-gradient(to top, #569eff,#22e8f3);
+    background: -moz-linear-gradient(to top, #569eff,#22e8f3);
+    background: -o-linear-gradient(to top, #569eff,#22e8f3);
+}
+
+.howitwork-yellow .icon-box,
+.howitwork-yellow a{
+	background: #f39301;
+    background: linear-gradient(to top,#f39301,#fed30a);
+    background: -webkit-linear-gradient(to top, #f39301,#fed30a);
+    background: -moz-linear-gradient(to top, #f39301,#fed30a);
+    background: -o-linear-gradient(to top, #f39301,#fed30a);
+}
+
+.howitwork-pink .icon-box,
+.howitwork-pink a{
+	background: #ee3e86;
+    background: linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -webkit-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -moz-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -o-linear-gradient(to top, #ee3e86,#fa5b77);
+}
+
+.howitwork-skyblue .icon-box,
+.howitwork-pink .icon-box,
+.howitwork-yellow .icon-box{
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/**********************************************/
+/*****   08. Awesome Features area css    *****/
+/**********************************************/
+
+.awesome-features{
+	padding: 100px 0;
+	background: #f9f9f9 url(../images/features-bg.png) no-repeat center center;
+	background-size: cover;
+}
+
+.awesome-features .section-title{
+	text-align: left;
+}
+
+.awesome-features .section-title h2:before{
+	left: 0;
+	margin-left: 0;
+}
+
+.awesome-features-image{
+	text-align: center;
+}
+
+.feature-single{
+	margin: 20px 0;
+}
+
+.feature-single h4{
+	font-size: 80px;
+}
+
+.feature-single h3{
+	font-size: 18px;
+	color: #1a1a1a;
+	font-weight: 500;
+	padding: 6px 0;
+}
+
+.feature-single p{
+	font-size: 14px;
+	color: #a5a3a3;
+	line-height: 1.5em;
+	font-weight: 300;
+}
+
+.feature-pink h4{
+	color: #e54485;
+}
+
+.feature-yellow h4{
+	color: #eca507;
+}
+
+.feature-skyblue h4{
+	color: #02d99a;
+}
+
+.feature-blue h4{
+	color: #52a2f9;
+}
+
+/*************************************/
+/*****   09. Pricing area css    *****/
+/*************************************/
+
+.pricing{
+	padding: 100px 0;
+}
+
+.pricing-single{
+	padding: 40px 60px;
+	margin: 30px 0;
+	text-align: center;
+	background: #05d2e3;
+    background: linear-gradient(to top, #05d2e3,#02da8f);
+    background: -webkit-linear-gradient(to top, #05d2e3,#02da8f);
+    background: -moz-linear-gradient(to top, #05d2e3,#02da8f);
+    background: -o-linear-gradient(to top, #05d2e3,#02da8f);
+	box-shadow: 0px -2px 29px 0px rgba(0, 0, 0, 0.07);
+}
+
+.pricing-header .icon-box{
+	font-size: 80px;
+	color: #fff;
+}
+
+.pricing-header h3{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.pricing-header p{
+	font-size: 12px;
+	color: #fff;
+}
+
+.pricing-body{
+	margin-top: 40px;
+}
+
+.pricing-body ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.pricing-body ul li{
+	color: #fff;
+	font-size: 14px;
+	padding: 4px 0;
+}
+
+.pricing-body ul li:before{
+	content: '\f00c';
+	font-family: FontAwesome;
+	color: #fff;
+	padding-right: 10px;
+}
+
+.pricing-footer{
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.pricing-footer h4{
+	font-size: 30px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.pricing-footer h4 span{
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.pricing-footer a{
+	display: inline-block;
+	background: #fff;
+	color: #05d2e2;
+	padding: 8px 40px;
+	border-radius: 20px;
+	margin-top: 6px;
+	transition: all 0.3s ease-in-out;
+}
+
+.pricing-footer a:hover{
+	background: #1a1a1a;
+	color: #fff;
+}
+
+.pricing-single.recommend{
+	margin: 0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: #ee3e86;
+    background: linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -webkit-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -moz-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -o-linear-gradient(to top, #ee3e86,#fa5b77);
+}
+
+.pricing-single.recommend .pricing-footer a{
+	color: #e63d82;
+}
+
+.pricing-single.recommend .pricing-footer a:hover{
+	color: #fff;
+}
+
+/*****************************************/
+/*****   10. Screenshot  area css    *****/
+/*****************************************/
+
+.screenshots{
+	padding: 100px 0;
+	background: #f9f9f9;
+}
+
+.screenshot-slide{
+	text-align: center;
+}
+
+.screenshot-slide p{
+	font-size: 14px;
+	color: #a5a3a3;
+	line-height: 1.5em;
+	font-weight: 300;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide-active .screenshot-slide p{
+	opacity: 1;
+}
+
+.screenshot-pagination{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.screenshot-prev,
+.screenshot-next{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin: 0 4px;
+	cursor: pointer;
+	background: #ee3e86;
+    background: linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -webkit-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -moz-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -o-linear-gradient(to top, #ee3e86,#fa5b77);
+}
+
+/*****************************************/
+/*****   11. Testimonial area css    *****/
+/*****************************************/
+
+.testimonials{
+	padding: 100px 0;
+    background: #1151d3;
+}
+
+.testimonials .section-title h2,
+.testimonials .section-title p{
+	color: #fff;
+}
+
+.testimonials .section-title h2:before{
+	background: #fff;
+}
+
+.testimonial-slide h3{
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.testimonial-slide p{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6em;
+	margin-bottom: 1.6em;
+}
+
+.testimonial-prev,
+.testimonial-next{
+	width: 30px;
+	height: 30px;
+	background: rgba(255,255,255,0.5);
+	color: #1151d3;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.testimonial-next{
+	margin-left: 4px;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover{
+	background: #fff;
+}
+
+/**********************************/
+/*****   12. FAQs area css    *****/
+/**********************************/
+
+.faqs{
+	padding: 100px 0;
+}
+
+.faq-single{
+	background: #f9f9f9;
+	padding: 30px;
+	border: 1px solid #cdcdcf;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+}
+
+.faq-single:before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -1px;
+	top: 0px;
+	right: -1px;
+	height: 8px;
+	z-index: -1;
+	border-radius: 4px 4px 0 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.faq-single:hover{
+	background: #fff;
+	box-shadow: 0px -6px 70px 0px rgba(0, 0, 0, 0.13);
+}
+
+.faq-single:hover:before{
+	top: -6px;
+}
+
+.faq-title{
+	margin-bottom: 20px;
+}
+
+.faq-title h3{
+	font-size: 16px;
+	color: #1a1a1a;
+	font-weight: 600;
+	position: relative;
+}
+
+.faq-title h3:after{
+	content: '?';
+	display: block;
+	font-weight: 600;
+	font-size: 14px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 50%;
+}
+
+.faq-pink .faq-title h3:after,
+.faq-pink.faq-single:before{
+	background: #ee3e86;
+    background: linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -webkit-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -moz-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -o-linear-gradient(to top, #ee3e86,#fa5b77);
+}
+
+.faq-yellow .faq-title h3:after,
+.faq-yellow.faq-single:before{
+	background: #f39301;
+    background: linear-gradient(#f39301,#fed30a);
+    background: -webkit-linear-gradient(#f39301,#fed30a);
+    background: -moz-linear-gradient(#f39301,#fed30a);
+    background: -o-linear-gradient(#f39301,#fed30a);
+}
+
+.faq-skyblue .faq-title h3:after,
+.faq-skyblue.faq-single:before{
+	background: #05d2e3;
+    background: linear-gradient(to top, #05d2e3,#02da8f);
+    background: -webkit-linear-gradient(to top, #05d2e3,#02da8f);
+    background: -moz-linear-gradient(to top, #05d2e3,#02da8f);
+    background: -o-linear-gradient(to top, #05d2e3,#02da8f);
+}
+
+.faq-blue .faq-title h3:after,
+.faq-blue.faq-single:before{
+	background: #569eff;
+    background: linear-gradient(to top, #569eff,#22e8f3);
+    background: -webkit-linear-gradient(to top, #569eff,#22e8f3);
+    background: -moz-linear-gradient(to top, #569eff,#22e8f3);
+    background: -o-linear-gradient(to top, #569eff,#22e8f3);
+}
+
+.faq-entry p{
+	font-size: 14px;
+	color: #a5a3a3;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+/*************************************************/
+/*****   13. Follow Social Links area css    *****/
+/*************************************************/
+
+.follow-on-social{
+	padding: 100px 0;
+	background: #f9f9f9;
+}
+
+.follow-social-single{
+	text-align: center;
+	border-bottom: 4px solid transparent;
+	padding-bottom: 40px;
+	transition: all 0.3s;
+}
+
+.follow-social-single h3{
+	font-size: 20px;
+	font-weight: 600;
+	color: #575d7f;
+}
+
+.follow-social-single p{
+	font-size: 18px;
+	color: #7b7676;
+}
+
+.follow-social-single a{
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;	
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin-top: 20px;
+	transition: all 0.3s;
+}
+
+.fs-facebook.follow-social-single:hover{
+	border-color: #3769c2;
+}
+
+.fs-facebook.follow-social-single a{
+	background: #3769c2;
+}
+
+.fs-youtube.follow-social-single:hover{
+	border-color: #e22a2a;
+}
+
+.fs-youtube.follow-social-single a{
+	background: #e22a2a;
+}
+
+.fs-twitter.follow-social-single:hover{
+	border-color: #33afef;
+}
+
+.fs-twitter.follow-social-single a{
+	background: #33afef;
+}
+
+.follow-social-single a:hover{
+	background: #1a1a1a;
+}
+
+/*******************************************/
+/*****   14. Download Apps area css    *****/
+/*******************************************/
+
+.download-app{
+	padding: 100px 0 80px;
+}
+
+.download-app .section-title{
+	margin-bottom: 40px;
+}
+
+.download-app .section-title h2{
+	font-size: 46px;
+	margin-bottom: 14px;
+}
+
+.download-app-button{
+	text-align: center;
+}
+
+.download-app-button .btn-download{
+	margin: 0 6px 10px;
+}
+
+/****************************************/
+/*****   15. Contact us area css    *****/
+/****************************************/
+
+.contact-us{
+	padding: 40px 0 100px;
+}
+
+.contact-form{
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+.contact-form .form-control{
+	border: none;
+	border-bottom: 1px solid #9d9c9c;
+	padding: 14px 0;
+	height: auto;
+	border-radius: 0;
+	box-shadow: none;
+	outline: 0;
+	resize: none;
+}
+
+.btn-contact{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	padding: 12px 30px;
+	border-radius: 30px;
+	margin-top: 20px;
+	background: #ee3e86;
+    background: linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -webkit-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -moz-linear-gradient(to top, #ee3e86,#fa5b77);
+    background: -o-linear-gradient(to top, #ee3e86,#fa5b77);
+}
+
+.btn-contact:focus,
+.btn-contact:hover{
+	background: #ee3e86;
+	box-shadow: none;
+	outline: 0;
+}
+
+/***************************************/
+/*****     16. Footer area css     *****/
+/***************************************/
+
+footer.footer{
+	padding: 260px 0 100px;
+	background: #0f0e0e url(../images/footer-bg.png) no-repeat top center;
+	background-size: background-size: 185%;
+}
+
+.footer-social-links{
+	text-align: right;
+	padding-top: 10px;
+	margin-top: 166px;
+}
+
+.footer-social-links a{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: #1151d3;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 36px;
+	border-radius: 20px;
+	margin-left: 6px;
+	transition: all 0.3s ease-in-out;
+}
+
+.footer-social-links a:hover{
+	background: #1a1a1a;
+}
+
+.footer-info{
+	text-align: center;
+	margin-top: 161px;
+}
+
+.footer-info p{
+	font-size: 14px;
+	color: white;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.footer-info p:last-child{
+	margin-bottom: 0;
+}
+
+/************************************/
+/*****    17. Media Screens     *****/
+/************************************/
+
+@media only screen and (max-width: 1200px){
+	.navbar-default .navbar-nav>li>a:after{
+		padding: 0 12px 0 14px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.navbar-default{
+		background: #1151d3;
+	}
+	
+	.navbar-default .navbar-nav>li>a{
+		color: #fff;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	
+	.navbar-toggle{
+		display: block;
+	}
+	
+	.navbar-header{
+		float: none;
+	}
+	
+	#main-nav .navbar-collapse{
+		display: none !important;
+	}
+	
+	.navbar-default .navbar-toggle{
+		border-color: #fff;
+		border-radius: 0;
+		padding: 0;
+	}
+	
+	.navbar-brand img{
+		height: 56px;
+	}
+	
+	.navbar-brand,
+	.sticky-header .navbar-brand{
+		padding: 11px 0 11px 15px;
+	}
+	
+	.slicknav_menu{
+		background: #1151d3;
+	}
+	
+	.sticky-header .slicknav_menu{
+		background: none;
+	}
+	
+	.slicknav_menu{
+		margin-left: -15px;
+		margin-right: -15px;
+		padding: 0;
+	}
+	
+	.slicknav_menu li{
+		padding: 0 10px;
+	}
+
+	.slicknav_menu a{
+		color: #fff;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		text-transform: uppercase;
+		border: 1px solid transparent;
+	}
+
+	.slicknav_menu a a{
+		border: none !important;
+	}
+	
+	.slicknav_nav .slicknav_row:hover,
+	.slicknav_nav a:hover{
+		background: none;
+		color: #000;
+		border: none;
+		border-radius: 0;
+	}
+	
+	.slicknav_btn{
+		padding: 4px 4px;
+		background: none;
+	}
+	
+	.slicknav_icon-bar{
+		box-shadow: none;
+		border-radius: 0;
+		margin: 2px 0;
+	}
+	
+	.navbar-toggle{
+		top: 16px;
+		margin-right: 0;
+		transition: all 0.3s;
+	}
+
+	.sticky-header .navbar-toggle{
+		top: 11px;
+	}
+	
+	.navbar-collapse{
+		border: none !important;
+		border-top: 1px solid #fa534a !important;
+		box-shadow: none;
+		padding: 30px;
+		background: #f93f35;
+	}
+	
+	.navbar-toggle:hover{
+		background: transparent !important;
+	}
+	
+	.navbar-toggle .icon-bar{
+		margin: 4px 0;
+	}
+	
+	.sticky-header .navbar-brand img{
+		height: 42px;
+	}
+	
+	.header-content h2{
+		font-size: 30px;
+	}
+	
+	.header-content p br{
+		display: none;
+	}
+	
+	.banner{
+		padding: 140px 0 40px;
+	}
+	
+	.overview,
+	.how-it-works,
+	.awesome-features,
+	.pricing,
+	.screenshots,
+	.testimonials,
+	.faqs,
+	.follow-on-social{
+		padding: 60px 0;
+	}
+	
+	.download-app{
+		padding: 60px 0 40px;
+	}
+	
+	.services{
+		padding: 20px 0;
+	}
+	
+	.intro-video{
+		padding: 20px 0 60px;
+	}
+	
+	.service-single{
+		margin-bottom: 30px;
+	}
+	
+	.awesome-features-image{
+		margin-top: 40px;
+	}
+	
+	.follow-social-single{
+		padding-top: 40px;
+	}
+	
+	footer.footer{
+		padding: 160px 0 60px;
+	}
+	
+	.footer-logo{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	
+	.footer-social-links{
+		text-align: center;
+		margin-top: 30px;
+	}
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px){
+	.navbar-toggle {
+		top: 16px;
+		margin-right: 15px;
+	}
+	
+	.download-button{
+		text-align: center;
+	}
+	
+	.btn-download{
+		margin: 0 0 10px;
+	}
+	
+	.section-title h2,
+	.download-app .section-title h2{
+		font-size: 24px;
+	}
+	
+	.video-entry{
+		padding-top: 0;
+	}
+	
+	.video-image{
+		padding-left: 0;
+	}
+	
+	.video-image .btn-play{
+		left: 50%;
+		transform: translate(-50%,0);
+	}
+	
+	.section-title{
+		margin-bottom: 60px;
+	}
+	
+	.testimonial-slide h3{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.testimonial-slide p{
+		font-size: 14px;
+	}
+	
+	.contact-us{
+		padding: 40px 0 60px;
+	}
+	
+	footer.footer{
+		padding: 80px 0 60px;
+	}
+}
+
+/* Small Mobile Layout */
+
+@media only screen and (max-width: 480px) {
+	.navbar-brand img{
+		height: 56px;
+	}
+	
+	.section-title h2,
+	.download-app .section-title h2{
+		font-size: 22px;
+	}
+	
+	.navbar-brand,
+	.sticky-header .navbar-brand{
+		padding: 14px 0 14px 15px;
+	}
+	
+	.faq-single{
+		padding: 20px;
+	}
+}
