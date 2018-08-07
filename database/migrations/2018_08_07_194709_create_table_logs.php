@@ -15,14 +15,10 @@ class CreateTableLogs extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('name_en');
-            $table->string('code');
-            $table->string('currency_code');
-            $table->string('currency_name');
-            $table->string('currency_name_en');
-            $table->string('flag');
-            $table->integer('status')->default(0);
+            $table->string('description');
+            $table->integer('item_id');
+            $table->string('type');
+            $table->integer('user_id')->default(0);
             $table->softDeletes();
             $table->timestamps();
         });

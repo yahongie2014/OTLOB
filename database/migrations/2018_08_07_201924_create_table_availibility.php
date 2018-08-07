@@ -16,6 +16,7 @@ class CreateTableAvailibility extends Migration
         Schema::create('availibility', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('product_id')->index();
+            $table->integer('period');
             $table->date('date');
             $table->integer('quantity')->default(0);
             $table->softDeletes();

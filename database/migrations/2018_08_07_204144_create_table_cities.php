@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableCategory extends Migration
+class CreateTableCities extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,11 @@ class CreateTableCategory extends Migration
      */
     public function up()
     {
-        Schema::create('category', function (Blueprint $table) {
+        Schema::create('cities', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->index();
-            $table->string('name_en')->index();
-            $table->string('img');
-            $table->string('img_en');
-            $table->string('desc');
-            $table->string('desc_en');
-            $table->enum('lang',array('ar', 'en'));
-            $table->integer('is_offer')->default(0);
-            $table->integer('published')->default(0);
+            $table->integer('nation_id')->index();
+            $table->integer('status')->default(0);
             $table->softDeletes();
             $table->timestamps();
         });
@@ -37,7 +31,7 @@ class CreateTableCategory extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category');
+        Schema::dropIfExists('cities');
 
     }
 }

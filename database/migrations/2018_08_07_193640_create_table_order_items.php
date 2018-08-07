@@ -27,6 +27,7 @@ class CreateTableOrderItems extends Migration
             $table->string('amount');
             $table->string('total');
             $table->integer('status');
+            $table->integer('is_express');
             $table->softDeletes();
             $table->timestamps();
         });
