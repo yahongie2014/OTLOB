@@ -17,7 +17,7 @@ class CreateTableTimes extends Migration
             $table->increments('id');
             $table->string('name');
             $table->softDeletes();
-            $table->timestamp('created_at');
+            $table->timestamps();
         });
 
     }

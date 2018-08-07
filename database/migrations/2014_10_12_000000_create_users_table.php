@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('user_name')->index();
             $table->string('pic');
-            $table->string('email')->unique()->index();
+            $table->string('email')->unique()->index()->nullable();
             $table->string('password', 60);
             $table->string('phone')->unique()->index();
             $table->string('address');
@@ -40,6 +40,9 @@ class CreateUsersTable extends Migration
             $table->integer('attempts')->default(0);
             $table->integer('login_via_mobile')->default(0);
             $table->integer('login_via_dashboard')->default(0);
+            $table->double('express_charge_cost',13,2)->default(0);
+            $table->integer('communication');
+            $table->integer('city_id');
             $table->enum('login_by', array('manual', 'facebook', 'google'));
             $table->enum('device_type', array('android', 'ios','web'));
             $table->rememberToken();
