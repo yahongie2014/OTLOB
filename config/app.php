@@ -154,7 +154,7 @@ return [
         Aloha\Twilio\Support\Laravel\ServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-        Davibennun\LaravelPushNotification\LaravelPushNotificationServiceProvider::class,
+      //  Davibennun\LaravelPushNotification\LaravelPushNotificationServiceProvider::class,
         LaravelFCM\FCMServiceProvider::class,
         /*LaravelPayfort\Providers\PayfortServiceProvider::class,*/
 
@@ -221,7 +221,7 @@ return [
         'Html' =>  Collective\Html\HtmlFacade::class,
         'Twilio' =>  Aloha\Twilio\Support\Laravel\Facade::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-        'PushNotification' => Davibennun\LaravelPushNotification\Facades\PushNotification::class,
+//        'PushNotification' => Davibennun\LaravelPushNotification\Facades\PushNotification::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'FCM'      => LaravelFCM\Facades\FCM::class,
         'FCMGroup' => LaravelFCM\Facades\FCMGroup::class,
