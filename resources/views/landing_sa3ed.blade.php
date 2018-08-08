@@ -89,7 +89,7 @@
 				<!-- Navigation starts -->
 				<div class="navbar-collapse collapse" id="navigation">
 					<ul class="nav navbar-nav navbar-right main-navigation">
-						<li><a href="https://ratb.li/login">تسجيل الدخول</a></li>
+						<li><a href="http://ratbli.herokuapp.com/public/login">تسجيل الدخول</a></li>
 						<li><a href="#contact">تواصل معنا</a></li>
 						<li><a href="#features">مميزات تطبيق رتب.لى</a></li>
 						<li><a href="#hotitworks">عن رتب.لي</a></li>
