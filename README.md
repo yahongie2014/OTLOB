@@ -31,11 +31,11 @@ https://documenter.getpostman.com/view/2836787/77o4188
 
 Technology Used:
 ----------------
-1- Firebase
-2- Payfort
-3- Twillio
-4- JWT Auth
-5- 
+>1-Firebase
+>2-Payfort
+>3-Twillio
+>4-JWT Auth
+>5-socialite
 
 >Thank u
 
