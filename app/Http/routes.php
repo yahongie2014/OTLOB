@@ -68,7 +68,6 @@ Route::post('feed/product', 'ApiController@Feed_product');
 Route::post('contact/store', 'ApiController@contact_store');
 Route::post('payment/store', 'ApiController@Payment_store');
 Route::post('time/store', 'ApiController@Time_Store');
-Route::get('mk_admin', 'ApiController@is_admin');
 Route::post('country/store', 'ApiController@country_store');
 Route::post('town/store', 'ApiController@town_store');
 Route::post('area/store', 'ApiController@Area_store');
