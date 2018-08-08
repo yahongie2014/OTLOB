@@ -23,7 +23,7 @@
 
 http://127.0.1.1:8000
 #OR
-https://ratbli.herokuapp.com/
+https://ratbli.herokuapp.com/public
 
 For Api Resource:
 ---------------------------
